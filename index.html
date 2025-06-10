@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Unggah File Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <h2>Unggah File</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        Pilih file untuk diunggah:
+        <input type="file" name="fileToUpload" id="fileToUpload" accept="image/*,application/pdf">
+        <input type="submit" value="Unggah File" name="submit">
+    </form>
+
+    <div id="previewWrapper">
+        <img id="previewImg" />
+        <p id="previewText"></p>
+    </div>
+
+    <br>
+    <a href="gallery.php" class="gallery-link">Lihat Galeri Foto</a>
+
+</body>
+</html>
